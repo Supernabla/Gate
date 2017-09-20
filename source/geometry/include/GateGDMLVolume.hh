@@ -29,9 +29,9 @@ class GateGDMLVolume : public GateVVolume
 
     FCT_FOR_AUTO_CREATOR_VOLUME(GateGDMLVolume)
 
-    virtual G4LogicalVolume* ConstructOwnSolidAndLogicalVolume(G4Material*, G4bool) final;
-    virtual void DestroyOwnSolidAndLogicalVolume() final;
-    virtual G4double GetHalfDimension(size_t) final;
+    G4LogicalVolume* ConstructOwnSolidAndLogicalVolume(G4Material*, G4bool) final;
+    void DestroyOwnSolidAndLogicalVolume() final;
+    G4double GetHalfDimension(size_t) final;
 
     void SetPathToGDMLFile(const G4String& path) { mPathToGDMLFile = path; }
     void SetLogicalName(const G4String& name) { mLogicalName = name; }
