@@ -183,7 +183,8 @@ INCLUDE_DIRECTORIES(
   ${PROJECT_SOURCE_DIR}/source/physics/include
   ${PROJECT_SOURCE_DIR}/source/digits_hits/include
   ${PROJECT_SOURCE_DIR}/source/general/include
-  ${PROJECT_SOURCE_DIR}/source/externals/clhep/include)
+  ${PROJECT_SOURCE_DIR}/source/externals/clhep/include
+  ${PROJECT_SOURCE_DIR}/source/externals/cadmesh/include)
 
 #=========================================================
 # Locate sources and headers for this project
@@ -195,6 +196,7 @@ FILE(GLOB sources
   ${PROJECT_SOURCE_DIR}/source/general/src/*.cc
   ${PROJECT_SOURCE_DIR}/source/externals/clhep/src/CLHEP/Matrix/*.cc
   ${PROJECT_SOURCE_DIR}/source/externals/clhep/src/CLHEP/RandomObjects/*.cc
+  ${PROJECT_SOURCE_DIR}/source/externals/cadmesh/src/*.cc
   ${PROJECT_SOURCE_DIR}/source/gpu/src/GateGPUManager.cu)
 
 FILE(GLOB headers
@@ -204,6 +206,7 @@ FILE(GLOB headers
   ${PROJECT_SOURCE_DIR}/source/digits_hits/include/*.hh
   ${PROJECT_SOURCE_DIR}/source/general/include/*.hh
   ${PROJECT_SOURCE_DIR}/source/externals/clhep/include/*.hh
+  ${PROJECT_SOURCE_DIR}/source/externals/cadmesh/include/*.hh  
   ${PROJECT_SOURCE_DIR}/source/gpu/include/*.hh)
 
 #=========================================================
